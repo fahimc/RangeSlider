@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>index</title>
+		<meta name="author" content="Fahim" />
+		<!-- Date: 2013-10-19 -->
+		<script type="text/javascript" src="component/rangeslider/dataset/DataSetItem.js"></script>
+		<script type="text/javascript" src="component/rangeslider/dataset/DataSet.js"></script>
+		<script type="text/javascript" src="component/rangeslider/slider/RangeSlider.js"></script>
+		<script type="text/javascript" src="component/rangeslider/Slider.js"></script>
+		<script type="text/javascript" src="make.js"></script>
+		<style>
+			html, body {
+				width: 100%;
+				height: 100%;
+			}
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			.RangeSliderMiddle {
+				background-color: #333;
+			}
+			.RangeSliderLeftButton, .RangeSliderRightButton {
+
+				color: #ffffff;
+				padding: 0px 0px;
+				background: -moz-linear-gradient(
+				top,
+				#333333 0%,
+				#111111);
+				background: -webkit-gradient(
+				linear, left top, left bottom,
+				from(#333333),
+				to(#111111));
+				-moz-border-radius: 0px;
+				-webkit-border-radius: 0px;
+				border-radius: 0px;
+				border: 0px solid #333333;
+				-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(255,255,255,0.7);
+				-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(255,255,255,0.7);
+				box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(255,255,255,0.7);
+				text-shadow: 0px -1px 0px rgba(000,000,000,0.4), 0px 1px 0px rgba(255,255,255,0.3);
+			}
+			.RangeSliderLeftButton::before {
+				width: 0;
+				height: 0;
+				border-top: 4px solid transparent;
+				border-bottom: 4px solid transparent;
+				border-right: 8px solid #d2d2d2;
+				display: block;
+				content: "";
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			.RangeSliderRightButton::before {
+				width: 0;
+				height: 0;
+				border-top: 4px solid transparent;
+				border-bottom: 4px solid transparent;
+				border-left: 8px solid #d2d2d2;
+				display: block;
+				content: "";
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			.RangeSliderHandleLeftButton {
+				-webkit-border-top-left-radius: 2px;
+				-webkit-border-bottom-left-radius: 2px;
+				background-color: #7d7e7d !important;
+			}
+			.RangeSliderHandleLeftButton::before {
+				display: block;
+				content: "";
+				border-left: 1px solid rgba(0,0,0,0.1);
+				border-right: 1px solid rgba(0,0,0,0.1);
+				box-shadow: 0 1px 0 rgba(255,255,255,0.2);
+				margin-left: 11px;
+				margin-top: 5px;
+				height: 20px;
+				width: 5px;
+			}
+			.RangeSliderHandleRightButton {
+				-webkit-border-top-right-radius: 2px;
+				-webkit-border-bottom-right-radius: 2px;
+				background-color: #7d7e7d !important;
+			}
+			.RangeSliderHandleRightButton::before {
+				display: block;
+				content: "";
+				border-left: 1px solid rgba(0,0,0,0.1);
+				border-right: 1px solid rgba(0,0,0,0.1);
+				box-shadow: 0 1px 0 rgba(255,255,255,0.2);
+				margin-left: 11px;
+				margin-top: 5px;
+				height: 20px;
+				width: 5px;
+			}
+			.RangeSliderHandleMiddle {
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
+			}
+			.RangeSliderMiddle .item .label
+			{
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11px;
+				font-weight: bold;
+				color:#8A8A8A;
+			}
+			.RangeSliderMiddle .item .label::before 
+			{
+				display: block;
+				content: "";
+				border-right: 1px solid #666;
+				box-shadow: 0 1px 0 #777;
+				margin-left: -2px;
+				left:50%;
+				top: -1px;
+				height: 17px;
+				width: 0px;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body onload="init()">
+
+	</body>
+</html>
+
