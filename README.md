@@ -1,0 +1,4 @@
+RangeSlider
+===========
+
+Javascript range slider
