@@ -11,7 +11,7 @@ var RangeSlide = function(){};
 	_.dataSet = null;
 	_.slider = null;
 	_.buttonWidth = 31;
-	_.buttonHeight=31;
+	_.buttonHeight=18;
 	_.itemWidth=100;
 	_.callback=null;
 	_.DataSetItem = DataSetItem ? DataSetItem : null;
@@ -153,5 +153,5 @@ var RangeSlide = function(){};
 			this.element.style.height=value+"px";
 		}
 		return this.element.style.height.replace("px","");
-	}
+	};
 })();

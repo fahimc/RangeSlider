@@ -42,7 +42,7 @@ var DataSetItem = function() {
 		
 		// this.element.style.backgroundColor = this.getColour();
 		this.label.className = this.labelClassName;
-		this.label.style.color="#666";
+		// this.label.style.color="#666";
 		this.label.style.position="relative";
 		this.label.style.width="100%";
 		this.label.style.textAlign="center";
